@@ -4,7 +4,7 @@
 
 namespace TestWebApp.PageLogic;
 
-internal sealed class SimpleWrongPageLogic : IWrongPageLogic
+public sealed class SimpleWrongPageLogic : IWrongPageLogic
 {
     private SimpleWrongPageLogic() { }
 

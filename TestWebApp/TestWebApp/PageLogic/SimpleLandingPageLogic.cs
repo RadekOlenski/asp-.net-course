@@ -6,7 +6,7 @@ using TestWebApp.PageLogic.Utilities;
 
 namespace TestWebApp.PageLogic;
 
-internal sealed class SimpleLandingPageLogic : ILandingPageLogic
+public sealed class SimpleLandingPageLogic : ILandingPageLogic
 {
     private SimpleLandingPageLogic() { }
 

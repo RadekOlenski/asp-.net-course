@@ -4,7 +4,7 @@
 
 namespace TestWebApp.PageLogic;
 
-internal interface IWrongPageLogic : IMiddleware
+public interface IWrongPageLogic : IMiddleware
 {
     Task<bool> ProcessWrongPage(HttpContext context);
 }

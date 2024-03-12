@@ -6,7 +6,7 @@ using TestWebApp.PageLogic.Utilities;
 
 namespace TestWebApp.PageLogic;
 
-internal sealed class SimpleExitPageLogic : IExitPageLogic
+public sealed class SimpleExitPageLogic : IExitPageLogic
 {
     private SimpleExitPageLogic() { }
 
