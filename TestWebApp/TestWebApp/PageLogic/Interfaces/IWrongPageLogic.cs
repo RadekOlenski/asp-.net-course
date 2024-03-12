@@ -1,4 +1,8 @@
-﻿namespace TestWebApp.PageLogic;
+﻿// <copyright file="IWrongPageLogic.cs" company="Radosław Oleński">
+// Copyright (c) Radosław Oleński. All rights reserved
+// </copyright>
+
+namespace TestWebApp.PageLogic;
 
 internal interface IWrongPageLogic : IMiddleware
 {

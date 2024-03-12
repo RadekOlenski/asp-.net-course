@@ -1,4 +1,8 @@
-﻿using TestWebApp.PageLogic.Utilities;
+﻿// <copyright file="SimpleLandingPageLogic.cs" company="Radosław Oleński">
+// Copyright (c) Radosław Oleński. All rights reserved
+// </copyright>
+
+using TestWebApp.PageLogic.Utilities;
 
 namespace TestWebApp.PageLogic;
 

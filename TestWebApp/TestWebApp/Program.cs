@@ -1,4 +1,9 @@
+// <copyright file="Program.cs" company="Radosław Oleński">
+// Copyright (c) Radosław Oleński. All rights reserved
+// </copyright>
+
 using TestWebApp.PageLogic;
+using TestWebApp.PageLogic.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,13 +14,31 @@ builder.Services.AddTransient<IExitPageLogic>(static _ => SimpleExitPageLogic.Cr
 
 var app = builder.Build();
 
+//Recommended order of predefined middleware
+// app.UseExceptionHandler("/Error");
+// app.UseHsts();
+// app.UseHttpsRedirection();
+// app.UseStaticFiles();
+// app.UseRouting();
+// app.UseCors();
+// app.UseAuthentication();
+// app.UseAuthorization();
+// app.UseSession();
+// app.MapControllers();
+
 //Basic add of middlewares by calling UseMiddlewares multiple times
 // app.UseMiddleware<ILandingPageLogic>();
 // app.UseMiddleware<IWrongPageLogic>();
 // app.UseMiddleware<IExitPageLogic>();
 
+string[] availablePages = [Pages.LandingPagePath, Pages.ExitPagePath];
+
 //Chaining middleware by extension methods
-app.UseLandingPage().UseWrongPage().UseExitPage();
+app.UseWhen(
+    context => !Array.Exists(availablePages, pageName => pageName == context.Request.Path),
+    static applicationBuilder => applicationBuilder.UseWrongPage());
+
+app.UseLandingPage().UseExitPage();
 
 //Simple response map for GET request sent from home page sending over a text
 //app.MapGet("/", static () => "Hello World!");

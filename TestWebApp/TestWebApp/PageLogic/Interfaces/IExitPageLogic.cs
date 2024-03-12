@@ -1,5 +1,5 @@
-﻿// <copyright file="IExitPageLogic.cs" company="Something Random S.A.">
-// Copyright (c) Something Random S.A. All rights reserved
+﻿// <copyright file="IExitPageLogic.cs" company="Radosław Oleński">
+// Copyright (c) Radosław Oleński. All rights reserved
 // </copyright>
 
 namespace TestWebApp.PageLogic;
