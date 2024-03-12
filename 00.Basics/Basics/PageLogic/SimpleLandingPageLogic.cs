@@ -2,9 +2,9 @@
 // Copyright (c) Radosław Oleński. All rights reserved
 // </copyright>
 
-using TestWebApp.PageLogic.Utilities;
+using Basics.PageLogic.Utilities;
 
-namespace TestWebApp.PageLogic;
+namespace Basics.PageLogic;
 
 public sealed class SimpleLandingPageLogic : ILandingPageLogic
 {

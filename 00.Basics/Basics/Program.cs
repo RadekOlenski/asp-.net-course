@@ -2,8 +2,8 @@
 // Copyright (c) Radosław Oleński. All rights reserved
 // </copyright>
 
-using TestWebApp.PageLogic;
-using TestWebApp.PageLogic.Utilities;
+using Basics.PageLogic;
+using Basics.PageLogic.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 

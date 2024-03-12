@@ -2,7 +2,7 @@
 // Copyright (c) Radosław Oleński. All rights reserved
 // </copyright>
 
-namespace TestWebApp.PageLogic.Utilities;
+namespace Basics.PageLogic.Utilities;
 
 public static class Pages
 {

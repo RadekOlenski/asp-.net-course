@@ -2,7 +2,7 @@
 // Copyright (c) Radosław Oleński. All rights reserved
 // </copyright>
 
-namespace TestWebApp.PageLogic;
+namespace Basics.PageLogic;
 
 public interface IWrongPageLogic : IMiddleware
 {
